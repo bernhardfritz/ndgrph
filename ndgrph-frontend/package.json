@@ -1,0 +1,18 @@
+{
+  "name": "ndgrph-frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode=production && rsync -a public/ dist",
+    "serve": "webpack serve --mode=development"
+  },
+  "dependencies": {
+    "ndgrph": "1.0.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.62.2",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.4.0"
+  }
+}

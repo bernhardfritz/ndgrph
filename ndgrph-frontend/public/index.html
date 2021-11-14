@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Node graph</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <canvas id="canvas"></canvas>
+            <div id="nodes"></div>
+            <div class="toolbar">
+                <button onclick="addValueNode()">Add value node</button>
+                <button onclick="addSumNode()">Add sum node</button>
+            </div>
+        </div>
+        <template id="node-template">
+            <div class="node">
+                <div class="node__header">
+                    <div>My node</div>
+                </div>
+                <div class="node__content">
+                    <div class="node__inputs"></div>
+                    <div class="node__outputs">
+                        <div class="node__output">
+                            <div class="node__output-label">output</div>
+                            <div class="node__output-port"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <template id="node-input-template">
+            <div class="node__input">
+                <div class="node__input-port"></div>
+                <div class="node__input-label"></div>
+            </div>
+        </template>
+        <script src="main.js"></script>
+    </body>
+</html>
